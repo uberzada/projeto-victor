@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}
+
+/* Conteúdo principal */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.moto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.moto-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.moto-card:hover {
+  transform: scale(1.02);
+}
+
+.moto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.moto-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.moto-card p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.moto-card button {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.moto-card button:hover {
+  background-color: #444;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
